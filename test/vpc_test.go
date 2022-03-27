@@ -8,8 +8,6 @@ import (
 )
 
 func TestTerraformVpcExample(t *testing.T) {
-	// Declaring assert for using it multiple times
-	assert := assert.New(t)
 	// retryable errors in terraform testing.
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
 		TerraformDir: "../examples/vpc",
